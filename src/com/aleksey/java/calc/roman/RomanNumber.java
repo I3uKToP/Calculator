@@ -16,6 +16,10 @@ public class RomanNumber extends Number{
         this.value = value;
     }
 
+    public static RomanNumber valueOf(String romanValue) {
+        return new RomanNumber(romanValue);
+    }
+
     @Override
     public int intValue() {
         return value;
